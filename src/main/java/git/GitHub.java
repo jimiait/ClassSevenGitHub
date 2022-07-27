@@ -92,7 +92,7 @@ public class GitHub {
 
 		loginTest();
 		driver.findElement(CUSTOMER_MENU_BUTTON_FIELD).click();
-		driver.findElement(ADD_CUSTOMER_MENU_BUTTON_FIELD).click();
+	 	driver.findElement(ADD_CUSTOMER_MENU_BUTTON_FIELD).click();
 		Thread.sleep(3000);
 		boolean fullNameField = driver.findElement(FULL_NAME_FIELD).isDisplayed();
 		Assert.assertTrue(fullNameField, "Add customer page is not available");
